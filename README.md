@@ -1,12 +1,13 @@
-* create account
-* login
-* validate token
-* get user
-* edit user
-* delete user
-* add film
-* get film by id
-* edit film by id
-* delete film by id
-* get all films
+* [x] CREATE ACCOUNT
+* [ ] LOGIN
+* [ ] VALIDATE TOKEN
+* [ ] GET USER PROFILE
+* [ ] EDIT USER PROFILE
+* [ ] DELETE USER PROFILE
+* [ ] ADD MOVIE
+* [ ] GET MOVIE BY ID
+* [ ] EDIT FILM BY ID
+* [ ] DELETE FILM BY ID
+* [ ] GET ALL FILMS
+
 
