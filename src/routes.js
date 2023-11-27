@@ -4,10 +4,10 @@ const validateBody = require('./middlewares/validateBodyRequest');
 const userSchema = require('./joiSchemas/userSchema');
 const loginSchema = require('./joiSchemas/loginSchema');
 const authenticateUser = require('./middlewares/authentication');
-const { addMovie, findMovie } = require('./controllers/movie');
+const { addMovie, findMovie, editMovie, deleteMovie, listMovies } = require('./controllers/movie');
+const validateId = require('./middlewares/validateParamsRequest');
 const movieSchema = require('./joiSchemas/movieSchema');
 const idSchema = require('./joiSchemas/idSchema');
-const validateId = require('./middlewares/validateParamsRequest');
 
 const routes = express();
 
@@ -22,5 +22,8 @@ routes.delete('/user', deleteAccount);
 
 routes.post('/movie', validateBody(movieSchema), addMovie);
 routes.get('/movie/:id', validateId(idSchema), findMovie);
+routes.put('/movie/:id', validateId(idSchema), validateBody(movieSchema), editMovie);
+routes.delete('/movie/:id', validateId(idSchema), deleteMovie);
+routes.get('/movies', listMovies);
 
 module.exports = routes;
