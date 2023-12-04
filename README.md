@@ -1,6 +1,5 @@
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=C0C0C0&height=120&section=header"/>
-
-# `MOVIE CATALOG API REST`
+# MOVIE CATALOG API REST
 
 ## Description
 
@@ -8,16 +7,16 @@ This application allows for the user to create, edit and delete an account. Once
 
 ## Functionalities
 
-* `Create Account`
-* `Login`
-* `View Profile`
-* `Edit Profile`
-* `Delete Account`
-* `Add a Movie`
-* `Find a Movie`
-* `Edit a Movie`
-* `Delete a Movie`
-* `List All Movies`
+* Create Account
+* Login
+* View Profile
+* Edit Profile
+* Delete Account
+* Add a Movie
+* Find a Movie
+* Edit a Movie
+* Delete a Movie
+* List All Movies
 
 ## Executing the Project
 
@@ -66,19 +65,19 @@ Response body:
 Request body:
 ```JSON
 {
-    "email": "johndoe@email.com",
-    "password": "jd123"
+  "email": "johndoe@email.com",
+  "password": "jd123"
 }
 ```  
 Response body:
 ```JSON
 {
-	"user": {
-		"id": 1,
-		"username": "John Doe",
-		"email": "johndoe@email.com"
-	},
-	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OCwiaWF0IjoxNzAxMTI2Njk2LCJleHAiOjE3MDExNTU0OTZ9.tQzFmIWY29M5MBC7EspGDC1LCMZQZNyOZuOL36k8jDU"
+  "user": {
+		    "id": 1,
+		    "username": "John Doe",
+		    "email": "johndoe@email.com"
+	      },
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OCwiaWF0IjoxNzAxMTI2Njk2LCJleHAiOjE3MDExNTU0OTZ9.tQzFmIWY29M5MBC7EspGDC1LCMZQZNyOZuOL36k8jDU"
 }
 ``` 
 ---
@@ -92,11 +91,11 @@ Response body:
 
 ```JSON
 {
-	"user": {
-		"id": 1,
-		"username": "John Doe",
-		"email": "johdoe@email.com"
-	}
+  "user": {
+		    "id": 1,
+		    "username": "John Doe",
+		    "email": "johdoe@email.com"
+	      }
 }
 ```
 --- 
@@ -157,13 +156,13 @@ Response body:
 
 ```JSON
 {
-	"movie": {
-		"id": 1,
-		"title": "Titanic",
-		"release_year": 1997,
-		"directed_by": "James Cameron"
-	},
-	"synopsis": "N/A"
+  "movie": {
+		     "id": 1,
+		     "title": "Titanic",
+		     "release_year": 1997,
+		     "directed_by": "James Cameron"
+	       },
+  "synopsis": "N/A"
 }
 ```
 --- 
@@ -200,26 +199,26 @@ Response body:
 ```JSON
 [
   {
-		"id": 3,
-		"title": "Atonement",
-		"release_year": 2007,
-		"directed_by": "Joe Wright",
-		"synopsis": "As a 13-year-old, fledgling writer Briony Tallis irrevocably changes the course of several lives when she accuses her older sister’s lover of a crime he did not commit."
-	},
-	{
-		"id": 2,
-		"title": "There Will Be Blood",
-		"release_year": 2007,
-		"directed_by": "Paul Thomas Anderson",
-		"synopsis": "N/A"
-	},
-    {
-        "id": 1,
-        "title": "Titanic",
-        "release_year": 1997,
-        "directed_by": "Jimmy Cameron",
-        "synopsis": "101-year-old Rose DeWitt Bukater tells the story of her life aboard the Titanic, 84 years later. A young Rose boards the ship with her mother and fiancé. Meanwhile, Jack Dawson and Fabrizio De Rossi win third-class tickets aboard the ship. Rose tells the whole story from Titanic’s departure through to its death—on its first and last voyage—on April 15, 1912."
-    }
+    "id": 3,
+	"title": "Atonement",
+	"release_year": 2007,
+	"directed_by": "Joe Wright",
+	"synopsis": "As a 13-year-old, fledgling writer Briony Tallis irrevocably changes the course of several lives when she accuses her older sister’s lover of a crime he did not commit."
+  },
+  {
+	"id": 2,
+	"title": "There Will Be Blood",
+	"release_year": 2007,
+	"directed_by": "Paul Thomas Anderson",
+	"synopsis": "N/A"
+  },
+  {
+    "id": 1,
+    "title": "Titanic",
+    "release_year": 1997,
+    "directed_by": "Jimmy Cameron",
+    "synopsis": "101-year-old Rose DeWitt Bukater tells the story of her life aboard the Titanic, 84 years later. A young Rose boards the ship with her mother and fiancé. Meanwhile, Jack Dawson and Fabrizio De Rossi win third-class tickets aboard the ship. Rose tells the whole story from Titanic’s departure through to its death—on its first and last voyage—on April 15, 1912."
+  }
 ]
 ```
 ## Technologies & Libraries
@@ -236,4 +235,3 @@ Response body:
 ## Author
 
 [Rafael Santos](https://github.com/rafasantosbzr)
-
