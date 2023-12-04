@@ -1,9 +1,10 @@
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=C0C0C0&height=120&section=header"/>
 # MOVIE CATALOG API REST
 
 ## Description
 
-This application allows for the user to create, edit and delete an account. Once logged in, the user can add, find, edit and delete films onto the platform.
+This application enables users to create, edit, and delete accounts. 
+Upon logging in, users can add, list, find, edit, and delete films on the platform.
+
 
 ## Functionalities
 
@@ -72,12 +73,12 @@ Request body:
 Response body:
 ```JSON
 {
-  "user": {
-		    "id": 1,
-		    "username": "John Doe",
-		    "email": "johndoe@email.com"
-	      },
-  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OCwiaWF0IjoxNzAxMTI2Njk2LCJleHAiOjE3MDExNTU0OTZ9.tQzFmIWY29M5MBC7EspGDC1LCMZQZNyOZuOL36k8jDU"
+	"user": {
+		"id": 1,
+		"username": "John Doe",
+		"email": "johndoe@email.com"
+	},
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OCwiaWF0IjoxNzAxNzA1MDEzLCJleHAiOjE3MDE3MzM4MTN9.kYF_AQW5-dc_ww44rgXI-cnqNYRzuiQ3bxyqTDysfys"
 }
 ``` 
 ---
@@ -91,11 +92,11 @@ Response body:
 
 ```JSON
 {
-  "user": {
-		    "id": 1,
-		    "username": "John Doe",
-		    "email": "johdoe@email.com"
-	      }
+	"user": {
+		"id": 1,
+		"username": "John Doe",
+		"email": "johndoe@email.com"
+	}
 }
 ```
 --- 
@@ -156,13 +157,13 @@ Response body:
 
 ```JSON
 {
-  "movie": {
-		     "id": 1,
-		     "title": "Titanic",
-		     "release_year": 1997,
-		     "directed_by": "James Cameron"
-	       },
-  "synopsis": "N/A"
+	"movie": {
+		"id": 2,
+		"title": "There Will be Blood",
+		"release_year": 2007,
+		"directed_by": "Paul Thomas Anderson"
+	},
+	"synopsis": "N/A"
 }
 ```
 --- 
@@ -198,27 +199,20 @@ Response body:
 
 ```JSON
 [
-  {
-    "id": 3,
-	"title": "Atonement",
-	"release_year": 2007,
-	"directed_by": "Joe Wright",
-	"synopsis": "As a 13-year-old, fledgling writer Briony Tallis irrevocably changes the course of several lives when she accuses her older sister’s lover of a crime he did not commit."
-  },
-  {
-	"id": 2,
-	"title": "There Will Be Blood",
-	"release_year": 2007,
-	"directed_by": "Paul Thomas Anderson",
-	"synopsis": "N/A"
-  },
-  {
-    "id": 1,
-    "title": "Titanic",
-    "release_year": 1997,
-    "directed_by": "Jimmy Cameron",
-    "synopsis": "101-year-old Rose DeWitt Bukater tells the story of her life aboard the Titanic, 84 years later. A young Rose boards the ship with her mother and fiancé. Meanwhile, Jack Dawson and Fabrizio De Rossi win third-class tickets aboard the ship. Rose tells the whole story from Titanic’s departure through to its death—on its first and last voyage—on April 15, 1912."
-  }
+	{
+		"id": 2,
+		"title": "Atonement",
+		"release_year": 2007,
+		"directed_by": "Joe Wright",
+		"synopsis": "N/A"
+	},
+	{
+		"id": 1,
+		"title": "There Will Be Blood",
+		"release_year": 2007,
+		"directed_by": "Paul Thomas Anderson",
+		"synopsis": "Ruthless silver miner, turned oil prospector, Daniel Plainview moves to oil-rich California. Using his son to project a trustworthy, family-man image, Plainview cons local landowners into selling him their valuable properties for a pittance. However, local preacher Eli Sunday suspects Plainview’s motives and intentions, starting a slow-burning feud that threatens both their lives."
+	}
 ]
 ```
 ## Technologies & Libraries
